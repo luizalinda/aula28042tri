@@ -25,7 +25,6 @@
             <tr>
                 <th>Nome do Arquivo</th>
                 <th>Preview</th>
-                <th colspan="2">Ações</th>
             </tr>
             <% for (var n=0; n<resultado.length;n++){%>
                 <tr>
@@ -33,8 +32,6 @@
                         <%=resultado[n].arquivo%>
                     </td>
                     <td><img src="./uploads/<%=resultado[n].arquivo%>" width="200"></td>
-                    <td> <a href="/alterar_gallery?id=<%%=resultado[n]._id>" class="btn btn-outline-warning"> Alterar </a> </td>
-                    <td> <a href="/excluir_gallery?id=<%=resultado[n]._id%>" class="btn btn-outline-danger"> Excluir </a> </td>
                 </tr>
                 <%}%>
         </table>
